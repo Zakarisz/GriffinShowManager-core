@@ -13,7 +13,8 @@
 using namespace std;
 
 /*
- * 
+ * Main de test
+ * TODO remplacer par des tests CPPUnit
  */
 int main(int argc, char** argv) {
     Playlist* pl = new Playlist();
