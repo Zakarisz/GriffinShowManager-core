@@ -1,4 +1,4 @@
-AC_PREREQ([2.69])
+AC_PREREQ([2.59])
 AC_INIT([gsmd], [0.1], [fjousseaume@fortress-combat.fr])
 AM_INIT_AUTOMAKE([foreign])
 
