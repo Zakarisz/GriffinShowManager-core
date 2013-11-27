@@ -1,12 +1,13 @@
-/* 
- * File:   main.cpp
- * Author: ghent
- *
- * Created on 23 novembre 2013, 15:51
- */
+#include "Configuration.h"
+#include <iostream>
+#include "../config.h"
 
 int main(int argc, char** argv) {
+    Configuration configuration(argc, argv);
     
+    if (configuration.options["version"]) {
+        std::cout << PACKAGE_NAME << " version " << PACKAGE_VERSION << std::endl;
+    }
     return 0;
 }
 

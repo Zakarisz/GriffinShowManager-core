@@ -1,55 +1,51 @@
+#include "TrackTest.h"
 #include <cppunit/extensions/HelperMacros.h>
 #include "../src/Track.h"
-#include "TrackTest.h"
 
 CPPUNIT_TEST_SUITE_REGISTRATION( TrackTest );
 
 void TrackTest::testTitle(void)
 {
-        Track myTrack;
+    Track myTrack;
+    std::string testTitle = "title";
 
-        std::string testTitle = "title";
-
-        myTrack.title = testTitle;
-        CPPUNIT_ASSERT(myTrack.title == testTitle);
+    myTrack.title = testTitle;
+    CPPUNIT_ASSERT(myTrack.title == testTitle);
 }
 
 void TrackTest::testLocation(void)
 {
-        Track myTrack;
+    Track myTrack;
+    std::string testLocation = "location";
 
-        std::string testLocation = "location";
-
-        myTrack.location = testLocation;
-        CPPUNIT_ASSERT(myTrack.location == testLocation);
+    myTrack.location = testLocation;
+    CPPUNIT_ASSERT(myTrack.location == testLocation);
 }
 
 void TrackTest::testAnnotation(void)
 {
-        Track myTrack;
+    Track myTrack;
+    std::string testAnnotation = "annotation";
 
-        std::string testAnnotation = "annotation";
-
-        myTrack.annotation = testAnnotation;
-        CPPUNIT_ASSERT(myTrack.annotation == testAnnotation);
+    myTrack.annotation = testAnnotation;
+    CPPUNIT_ASSERT(myTrack.annotation == testAnnotation);
 }
 
 void TrackTest::testTrackNum(void)
 {
-        Track myTrack;
+    Track myTrack;
+    unsigned int testTrackNum = 1;
 
-        int testTrackNum = 1;
-
-        myTrack.trackNum = testTrackNum;
-        CPPUNIT_ASSERT(myTrack.trackNum == testTrackNum);
+    myTrack.trackNum = testTrackNum;
+    CPPUNIT_ASSERT(myTrack.trackNum == testTrackNum);
 }
 
 void TrackTest::testDuration(void)
 {
-        Track myTrack;
+    Track myTrack;
+    unsigned int testDuration = 600000;
 
-        int testDuration = 600000;
-
-        myTrack.duration = testDuration;
-        CPPUNIT_ASSERT(myTrack.duration == testDuration);
+    myTrack.duration = testDuration;
+    CPPUNIT_ASSERT(myTrack.duration == testDuration);
 }
+

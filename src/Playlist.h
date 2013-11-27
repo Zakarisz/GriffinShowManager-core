@@ -1,14 +1,15 @@
-#ifndef PLAYLIST_H
-#define	PLAYLIST_H
+#ifndef GSMCORE_SRC_PLAYLIST_H_INCLUDED
+#define	GSMCORE_SRC_PLAYLIST_H_INCLUDED
 
-#include "Track.h"
 #include <string>
 #include <list>
+#include "Track.h"
 
 class Playlist{
-public:
-    std::string title;
-    std::list<Track> trackList;
+    public:
+        std::string title;
+        std::list<Track> trackList;
 };
 
-#endif	/* PLAYLIST_H */
+#endif
+
