@@ -1,10 +1,16 @@
 language: cpp
 compiler: gcc
 
-# Change this to your needs
 script: autoreconf -i && ./configure && make && make check
 
 before_install:
  - sudo apt-get update -qq
  - sudo apt-get install -qq libcppunit-dev
+
+notifications:
+  email:
+    recipients:
+      - fjousseaume@fortress-combat.fr
+    on_success: change
+    on_failure: always
 
