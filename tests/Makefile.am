@@ -4,4 +4,4 @@ gsmdtest_SOURCES=\
             TrackTest.cpp \
             PlaylistTest.cpp
 gsmdtest_CXXFLAGS = $(CPPUNIT_CFLAGS)
-gsmdtest_LDFLAGS = $(CPPUNIT_LIBS)
+gsmdtest_LDADD = $(CPPUNIT_LIBS)
